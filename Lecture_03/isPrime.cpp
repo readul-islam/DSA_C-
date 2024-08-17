@@ -11,6 +11,7 @@ int main()
         if (n % 2 == 0)
         {
             isPrime = false;
+            break;
         }
         else
         {
