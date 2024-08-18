@@ -20,7 +20,10 @@ int main()
     cin >> n;
     int m = n;
     int mask = 0;
-
+    // edge case
+    if(n ==0){
+        return 1;
+    }
     while(n != 0)
     {
         mask = (mask << 1) | 1;
