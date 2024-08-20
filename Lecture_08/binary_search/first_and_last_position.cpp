@@ -31,7 +31,7 @@ int firstOcc(int arr[], int size, int key)
         {
             s = mid + 1;
         }
-        else if (key < arr[mid])
+        else 
         {
             e = mid - 1;
         }
@@ -40,30 +40,25 @@ int firstOcc(int arr[], int size, int key)
     return ans;
 }
 
-int lastOcc(int arr[], int size, int key)
-{
-    int s = 0;
-    int e = size - 1;
-    int mid = s + (e - s) / 2;
-    int ans = -1;
+int lastOcc(int arr[], int n, int key) {
 
-    while (s <= e)
-    {
-        if (arr[mid] == key)
-        {
+    int s = 0, e = n-1;
+    int mid = s + (e-s)/2;
+    int ans = -1;
+    while(s<=e) {
+
+        if(arr[mid] == key){
             ans = mid;
             s = mid + 1;
         }
-
-        if (key>arr[mid])
-        {
+        else if(key > arr[mid]) {//Right me jao
             s = mid + 1;
         }
-        else
-        {
+        else{//left me jao
             e = mid - 1;
         }
-        mid = s + (e - s) / 2;
+
+        mid = s + (e-s)/2;
     }
     return ans;
 }
