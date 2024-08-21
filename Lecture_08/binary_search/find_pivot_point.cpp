@@ -24,8 +24,8 @@ int findPivotPoint(int arr[], int size)
 
 int main()
 {
-    int arr[8] = {50, 60, 70, 10, 20, 30, 35, 40};
-    int size = 8;
+    int arr[1] = {1};
+    int size = 1;
 
     cout << findPivotPoint(arr, size) << endl;
 }
