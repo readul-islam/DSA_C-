@@ -36,10 +36,28 @@ int mySqrt(int x) {
         cout << i << endl;
         return --i;
     }
+
+
+double morePrecious(int n, int precious, int tmpSol){
+    double factor  = 1;
+    double ans = tmpSol;
+
+    for(int i=0; i<precious; i++){
+        factor = factor/10;
+
+        for(double j = ans; j*j<n; j=j+factor){
+            ans = j;
+        }
+    }
+    return ans;
+
+}    
 int main()
 {
     int n;
     cin >> n;
     // cout << sqrt(n)<< endl;
-    cout <<mySqrt(n) << endl; 
+    int temp = mySqrt(n);
+    cout << morePrecious(n, 3, temp) << endl;
+
 }
