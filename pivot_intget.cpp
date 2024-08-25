@@ -18,5 +18,7 @@ int main()
     int n;
     cin >> n;
 
+    cout << 4%2 << endl;
+
     cout << pivotInteger(n) << endl;
 }
