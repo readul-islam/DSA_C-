@@ -22,7 +22,7 @@ void merge(int arr1[], int n, int arr2[], int m, int arr3[]) {
 
     //copy kardo second array k remaining element ko
     while(j<m) {
-        arr2[k++] = arr2[j++];
+        arr3[k++] = arr2[j++];
     }
 }
 
@@ -36,13 +36,13 @@ void print(int ans[], int n) {
 int main() {
 
     int arr1[5] = {1,3,5,7,9};
-    int arr2[3] = {2,4,6};
+    int arr2[4] = {2,4,6,8};
 
-    int arr3[8] = {0};
+    int arr3[9] = {0};
 
-    merge(arr1, 5, arr2, 3, arr3);
+    merge(arr1, 5, arr2, 4, arr3);
 
-    print(arr3, 8);
+    print(arr3, 9);
 
 
     return 0;
