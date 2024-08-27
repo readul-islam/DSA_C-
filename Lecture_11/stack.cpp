@@ -2,6 +2,7 @@
 #include <stack>
 using namespace std;
 
+// last in fast out
 int main()
 {
 
