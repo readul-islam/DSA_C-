@@ -1,6 +1,15 @@
 #include<iostream>
 using namespace std;
 
+void reverseInt (char name[], int n){
+    int s = 0;
+    int e = n -1;
+    while(s<e){
+        swap(name[s++], name[e--]);
+
+    }
+}
+
 int getLength (char name[]){
     int count = 0;
     for(int i = 0; name[i]!= '\0'; i++){
@@ -20,6 +29,10 @@ int main(){
 
 
 cout << "Your name is " << name << endl;
-cout << "Length: " << getLength(name) << endl;
+int len = getLength(name);
+
+cout << "Length: " << len << endl;
+reverseInt(name, len);
+cout << "After Reverse => Your name is " << name << endl;
 
 }
