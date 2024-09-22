@@ -39,6 +39,7 @@ bool checkPalindrome(char name[], int len)
 
 int main()
 {
+    
 
     char name[20];
     cin >> name;
