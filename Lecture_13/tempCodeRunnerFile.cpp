@@ -1,25 +1,24 @@
- string s = " the sky is blue ";
-    string temp = "", ans = "";
-    for (int i = 0; i <= s.length(); i++)
-    {
-        if (isalnum(s[i]) == 1)
-        {
-            temp += s[i];
-            cout << temp << endl;
-            cout << "==========" << endl;
-        }
-        else if (isalnum(s[i]) == 0)
-        {
-            if (ans == "")
-            {
-                ans = temp;
-                temp = "";
-            }
-            else
-            {
-                ans = temp + " " + ans;
-                temp = "";
-            }
-        }
-    }
-    cout << ans;
+ // if(n==0){
+    //     ans = 1;
+    // }
+
+    // while (right == 0)
+    // {
+    //     if (!isalnum(s[n]))
+    //     {
+    //         n--;
+    //     }
+    //     else
+    //     {
+    //         right = n;
+    //     }
+    // }
+
+    // while (isalnum(s[right]))
+    // {
+        
+    //     ans += 1;
+    //     right--;
+        
+
+    // }
