@@ -12,7 +12,7 @@ int main()
     while(len>=0 && s[len] == ' '){
         len--;
     };
-    // count first word
+    // count letter until come whitespace
 
     while(len>=0 && s[len] != ' '){
         ans++;
