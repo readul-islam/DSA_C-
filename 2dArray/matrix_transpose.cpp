@@ -1,10 +1,10 @@
 #include <iostream>
 #include <vector>
-#include <algorithm>  // For std::swap
+#include <algorithm> // For std::swap
 using namespace std;
 
 int main()
-{   // when  matrix will be n*n dimension ex. 2*2 ,4*4
+{ // when  matrix will be n*n dimension ex. 2*2 ,4*4
     vector<vector<int>> arr{
         {1, 2, 3, 4, 5},
         {6, 7, 8, 9, 10},
@@ -19,10 +19,11 @@ int main()
     // Transpose the matrix
     for (int i = 0; i < row; i++)
     {
-        for (int j = i + 1; j < col; j++)  // Only swap above the diagonal
+        for (int j = i + 1; j < col; j++) // Only swap
         {
             swap(arr[i][j], arr[j][i]);
-        }
+        };
+        // reverse(arr[i].begin(), arr[i].end());
     }
 
     cout << "=======================" << endl;
