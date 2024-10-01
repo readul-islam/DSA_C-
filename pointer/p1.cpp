@@ -19,11 +19,23 @@ int main()
     *ptr = *ptr + 8;
 
     cout << *ptr << endl;
+    // when one pointer address hold another pointer
+    int **ptr1 = &ptr;
+    cout << ptr1 << " - " << &ptr << endl;
+    cout << **ptr1 << " - " << *ptr << endl;
+
+
+
+
+
 
     int i = 6;
     int *p = 0;
     p = &i;
     *p = (*p) + 1;
     cout << *p << endl;
+
+    cout << "size of pointer  value: " << sizeof(p) << endl;
+    cout << "size of pointer address value: " << sizeof(*p) << endl;
     return 0;
 };
