@@ -20,7 +20,7 @@ int sum (int *arr , int n){
     }
     return sum;
 }
-
+// arr[i] = *( arr + i);
 int main()
 {
 
