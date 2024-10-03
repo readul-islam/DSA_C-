@@ -21,5 +21,21 @@ int main()
 
     cout << arr[9] << endl;
 
+    // static allocation by default release memory of variable
+    // dynamic allocation not release memory by default. we need to free memory manually
+
+    int *i = new int;
+    *i = 10;
+    cout << "Before free heap memory " << *i << endl;
+    // free heap memory
+    delete i;
+    cout << "after free heap memory " << *i << endl;
+    int *nums = new int[10];
+    *nums = 10;
+    cout << "Before free heap memory " << nums[0] << endl;
+    // free heap memory
+    delete[] nums;
+    cout << "after free heap memory " << nums[0] << endl;
+
     return 0;
 };
