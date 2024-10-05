@@ -9,8 +9,7 @@ int sumArray(int *arr, int size)
     if (size == 0)
         return 0;
 
-    int sum = arr[0] + sumArray(arr + 1, size - 1);
-    return sum;
+    return arr[0] + sumArray(arr + 1, size - 1);
 }
 
 int main()
