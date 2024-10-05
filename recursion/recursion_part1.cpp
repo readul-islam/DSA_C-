@@ -6,7 +6,7 @@ using namespace std;
 
 int factorial(int n)
 {
-    // base case;
+    // base condition;
     if (n == 0)
     {
         return 1;
@@ -18,11 +18,12 @@ int factorial(int n)
 
 
 int power(int n , int pow){
+    // base condition
     if(pow == 0){
         return 1;
     }
 
-    return n * power(n , pow-1);
+    return n * power(n , pow-1);// recursive  relation
 }
 
 int main()
