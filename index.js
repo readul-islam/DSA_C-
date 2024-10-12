@@ -11,7 +11,7 @@ const myPromise = new Promise((resolve, reject) => {
         }
     }, 2000); // 2-second delay
 });
-
+//
 // Using the promise
 myPromise
     .then((message) => {
